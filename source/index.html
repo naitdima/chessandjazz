@@ -1,11 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Main Stage</title>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chessandjazz</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container  page-header__container">
+        <section class="page-header__social-wrap">
+            <h2 class="visually-hidden">Новости и анонсы:</h2>
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-item__link  social-item__link--fb" href="#">
+                  <svg class="social-item__link-icon  social-item__link-icon--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10"
+                    height="19">
+                    <use xlink:href="#sprite-icon-fb-mobile" fill="#666666"></use>
+                  </svg>
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-item__link  social-item__link--vk" href="#">
+                  <svg class="social-item__link-icon  social-item__link-icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22"
+                    height="12">
+                    <use xlink:href="#sprite-icon-vk-mobile" fill="#666666"></use>
+                  </svg>
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-item__link  social-item__link--inst" href="#">
+                  <svg class="social-item__link-icon  social-item__link-icon--inst" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                    width="16" height="16">
+                    <use xlink:href="#sprite-icon-insta-mobile" fill="#666666"></use>
+                  </svg>
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+      <div class="page-header__wrap">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/logo-desktopfull.svg">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo cj.svg" alt="Chessandjazz" width="100" height="100">
+          </picture>
+        </a>
+        <a class="btn  page-header__link" href="ticket.html">Купить билет</a>
+
+        <button class="hamburger-btn">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+      <nav class="page-header__nav  page-header__nav--show">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-link  page-header__nav-link--active">Джаз</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Шахматы</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Лекторий</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Гастрономия</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1 class="visually-hidden">О фестивале</h1>
+    <section class="promo">
+      <div class="promo__title-wrap">
+        <div class="container">
+          <h2 class="promo__event">7 июля, Сад «Эрмитаж», 14.00</h2>
+          <b class="promo__title">ФЕСТИВАЛЬ ДЖАЗА И ШАХМАТ</b>
+          <b class="promo__desc">Фестиваль объединит в себе лучший опыт организации музыкальных событий и удивит гостей насыщенной программой: выступления
+            зарубежных и отечественных джазовых коллективов, шахматный турнир на открытом воздухе, лекторий и лучшие гастрономические
+            проекты Москвы. Фестиваль Chess & Jazz это место силы где встретятся стиль и интеллект.</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="musicians">
+      <h2 class="visually-hidden">Музыканты</h2>
+      <ul class="musicians-list">
+        <li class="musicians-item">
+          <img class="musicians-item__img" src="img/ceelo.png" alt="Кэллавей" width="731" height="449">
+          <p class="musicians-item__descr">Томас Декарло Кэллавей (Thomas DeCarlo Callaway, род. 30 мая 1974) — американский певец, рэпер, автор песен и продюсер, более известный под своим сценическим псевдонимом Си Ло Грин (CeeLo Green). Многократный обладатель премии Grammy, исполнитель хита группы Gnarls Barkley «Crazy», автор песни «F*ck You» и судья популярного американского шоу The Voice.</p>
+        </li>
+        <li class="musicians-item">
+          <img class="musicians-item__img" src="img/cory.png" alt="Cory" width="334" height="564">
+          <p class="musicians-item__descr">Мультиинструменталист, мастер импровизации, участник команды Snarky Puppy, обладатель двух «Грэмми» — солидный
+            набор для человека его возраста.
+            <a class="musicians-item__link" href="#more">Еще</a>
+          </p>
+        </li>
+        <li class="musicians-item">
+          <img class="musicians-item__img" src="img/kamaal.png" alt="Kamaal" width="322" height="556">
+          <p class="musicians-item__descr">Особое место в лайнапе Chess & Jazz займет звезда лондонского андеграунда Kamaal Williams, также известный под
+            псевдонимом Henry Wu. Он представит в России свой новый альбом The Return, выпущенный в 2018 году.
+            <a class="musicians-item__link" href="#more">Еще</a>
+          </p>
+        </li>
+        <li class="musicians-item">
+          <img class="musicians-item__img" src="img/secret.png" alt="Secret" width="335" height="548">
+          <p class="musicians-item__descr">Если описывать Secret Atelier одним словом, то это будет «soul». Но музыка проекта лишний раз показывает, насколько
+            широко это можно трактовать.
+            <a class="musicians-item__link" href="#more">Еще</a>
+          </p>
+        </li>
+        <li class="musicians-item">
+          <img class="musicians-item__img" src="img/rangtime.png" alt="Moscow Rangtime" width="521" height="417">
+          <p class="musicians-item__descr">Moscow Ragtime Band – столичный ансамбль, исполняющий традиционный джаз первой половины ХХ века так же горячо и
+            артистично, как это делали великие пионеры жанра в старые добрые времена!
+            <a class="musicians-item__link" href="#more">Еще</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <section class="page-footer__partners-wrap">
+          <h2 class="visually-hidden">Партнеры</h2>
+          <ul class="partners-list">
+            <li class="partners__item">
+              <a class="partners__link  partners__link" href="#">
+                <span class="visually-hidden"></span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--porsche" href="#">
+                <span class="visually-hidden">Porsche</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--gopro" href="#">
+                <span class="visually-hidden">Мегафон</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--jbl" href="#">
+                <span class="visually-hidden">JBL</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--sport" href="#">
+                <span class="visually-hidden">СпортЭкспресс</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--department" href="#">
+                <span class="visually-hidden">Департамент культуры города Москвы</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--silverrain" href="#">
+                <span class="visually-hidden">Серебряный дождь</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link" href="#">
+                <span class="visually-hidden"></span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link--jbl" href="#">
+                <span class="visually-hidden">Marriott</span>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__link  partners__link" href="#">
+                <span class="visually-hidden"></span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-footer__social-wrap">
+          <h2 class="social-title">Новости и анонсы:</h2>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-item__link  social-item__link--fb" href="#">
+                <svg class="social-item__link-icon  social-item__link-icon--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10"
+                  height="19">
+                  <use xlink:href="#sprite-icon-fb-mobile" fill="#666666"></use>
+                </svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item__link  social-item__link--vk" href="#">
+                <svg class="social-item__link-icon  social-item__link-icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22"
+                  height="12">
+                  <use xlink:href="#sprite-icon-vk-mobile" fill="#666666"></use>
+                </svg>
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item__link  social-item__link--inst" href="#">
+                <svg class="social-item__link-icon  social-item__link-icon--inst" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                  width="16" height="16">
+                  <use xlink:href="#sprite-icon-insta-mobile" fill="#666666"></use>
+                </svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="contacts-wrap">
+          <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <h3 class="contacts-item__title  contacts-item__title--mail">Общая информация</h3>
+                <a class="contacts-item__link" href="#">info@chessandjazz.ru</a>
+              </li>
+              <li class="contacts-item">
+                <h3 class="contacts-item__title  contacts-item__title--phone">Для прессы</h3>
+                <a class="contacts-item__link" href="#">pr@chessandjazz.ru</a>
+              </li>
+              <li class="contacts-item">
+                <h3 class="contacts-item__title  contacts-item__title--phone">Партнерство</h3>
+                <a class="contacts-item__link" href="#">partners@chessandjazz.ru</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
