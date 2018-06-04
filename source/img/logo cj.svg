@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>logo C&amp;J</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Portrait" transform="translate(-20.000000, -50.000000)">
+            <g id="logo-C&amp;J" transform="translate(20.000000, 50.000000)">
+                <polygon id="Fill-1" fill="#000000" points="0 100 100 100 100 0 0 0"></polygon>
+                <g id="Group-38" transform="translate(15.000000, 30.000000)" fill="#FFFFFF">
+                    <path d="M0,10 C0,7.12079488 1.57943243,4.57680857 4,3" id="Fill-2"></path>
+                    <path d="M4,17 C1.57943243,15.4231914 0,12.8792051 0,10" id="Fill-4"></path>
+                    <path d="M4,18 L4,3 C1.57943243,4.68943776 0,7.41521711 0,10.5 C0,13.5848626 1.57943243,16.3105622 4,18" id="Fill-6"></path>
+                    <polygon id="Fill-8" points="10 18 14 18 14 14"></polygon>
+                    <polygon id="Fill-10" points="14 5 14 1 10 1"></polygon>
+                    <polygon id="Fill-12" points="18 18 21 18 21 0 18 0"></polygon>
+                    <path d="M26,6.0000875 L26,18 L29,18 L29,9.87555202 C29,5.92856005 26,6.0000875 26,6.0000875" id="Fill-14"></path>
+                    <path d="M44,12 C44,7.03844907 41,6 41,6 L41,12 L44,12 Z" id="Fill-15"></path>
+                    <path d="M33,11.5 C33,16.0481627 36,17 36,17 L36,6 C36,6 33,6.95191165 33,11.5" id="Fill-16"></path>
+                    <polygon id="Fill-17" points="41 18 44 18 44 15"></polygon>
+                    <polygon id="Fill-18" points="54 6 57 6 57 9"></polygon>
+                    <polygon id="Fill-19" points="52 18 49 18 49 15"></polygon>
+                    <path d="M49.7894162,7 C49.7894162,7 53.4156444,10.8026207 54.7617483,12.2158855 C56.1078522,13.6291503 58.1270842,15.7562342 56.2177056,18 C56.2177056,18 51.5200451,13.1337567 50.6684718,12.2158855 C49.8168224,11.2980143 47.9350785,9.11254909 49.7894162,7" id="Fill-20"></path>
+                    <polygon id="Fill-21" points="66 6 69 6 69 9"></polygon>
+                    <polygon id="Fill-22" points="64 18 61 18 61 15"></polygon>
+                    <path d="M61.7894162,7 C61.7894162,7 65.4156444,10.8026207 66.7617483,12.2158855 C68.1078522,13.6291503 70.1270842,15.7562342 68.2177056,18 C68.2177056,18 63.5201212,13.1337567 62.6684718,12.2158855 C61.8168224,11.2980143 59.9350785,9.11254909 61.7894162,7" id="Fill-23"></path>
+                    <path d="M2.66677936,23 L16,38 L12.2301124,38 C12.2301124,38 4.44729212,29.3497783 3.6673816,28.4276518 C3.32439918,28.0219911 0.833801436,25.7053543 2.66677936,23" id="Fill-24"></path>
+                    <path d="M2,30 C0.812211757,30.7519221 0,32.2595565 0,34.0000395 C0,35.7404435 0.812211757,37.2479989 2,38 L2,30 Z" id="Fill-25"></path>
+                    <polygon id="Fill-26" points="12 28 17 28 14.3576911 31"></polygon>
+                    <path d="M9,22 L9,27 C10.1426865,26.7525417 11,25.7283917 11,24.5 C11,23.2716083 10.1426865,22.2474583 9,22" id="Fill-27"></path>
+                    <path d="M23,44 L23,22 L26,22 L26,38.5210414 C26,43.3320077 23,44 23,44" id="Fill-28"></path>
+                    <path d="M38,26.0000872 L38,38 L41,38 L41,29.8754509 C41,25.9286362 38,26.0000872 38,26.0000872" id="Fill-29"></path>
+                    <polygon id="Fill-30" points="34 26 31 26 31 29"></polygon>
+                    <path d="M33,31 C31.3279126,31.1146812 30,32.6295053 30,34.5000397 C30,36.3704947 31.3279126,37.8852394 33,38 L33,31 Z" id="Fill-31"></path>
+                    <polygon id="Fill-32" points="45 29 45 26 48 26"></polygon>
+                    <polygon id="Fill-33" points="55 35 55 38 52 38"></polygon>
+                    <polygon id="Fill-34" points="51.8817512 26 55 26 48.2604156 38 45 38"></polygon>
+                    <polygon id="Fill-35" points="59 29 59 26 62 26"></polygon>
+                    <polygon id="Fill-36" points="69 35 69 38 66 38"></polygon>
+                    <polygon id="Fill-37" points="65.8817277 26 69 26 62.2603648 38 59 38"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
