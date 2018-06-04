@@ -3,23 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/boruttagroup.woff2" as="font">
+    <link rel="preload" href="fonts/nowievremena.woff2" as="font">
+    <link rel="preload" href="fonts/nowievremenalight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
     <title>Chess &#38;#38; Jazz</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="container  page-header__wrap">
+      <div class="container">
         <ul class="decor-list">
-          <li class="decor-item"></li>
-          <li class="decor-item"></li>
-          <li class="decor-item"></li>
-          <li class="decor-item"></li>
-          <li class="decor-item"></li>
+          <li class="decor-item  decor-item--cell"></li>
+          <li class="decor-item  decor-item--armitage"></li>
+          <li class="decor-item  decor-item--abstraction"></li>
+          <li class="decor-item  decor-item--mcb"></li>
+          <li class="decor-item  decor-item--lines"></li>
         </ul>
-        <a class="logo" aria-label="Chess&#38;Jazz">
-          <img class="logo__img" src="" alt="">
-        </a>
-        <a class="buy-link  buy-link--top" href="">Купить билет</a>
+        <div class="page-header__wrap">
+          <a class="logo  page-header__logo" aria-label="Chess&#38;Jazz">
+            <img class="logo__img" src="img/logo.svg" alt="Chess&#38;Jazz" width="69" height="44">
+          </a>
+          <a class="buy-link  page-header__buy-link" href="">Купить билет</a>
+        </div>
       </div>
     </header>
     <main class="page-content">
@@ -30,29 +35,77 @@
       </section>
       <section class="artists">
         <ul class="artists-list">
-          <li class="artists-item">
-            <img class="artists-item__img  artists-item__img--photo" src="" alt="Thomas DeCarlo Callaway photo">
-            <img class="artists-item__img  artists-item__img--name" src="" alt="Cee Lo Green">
+          <li class="artists-item  artists-item--ceelo">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/ceelo-desktop@1x.webp 1x, img/ceelo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/ceelo-tablet@1x.webp 1x, img/ceelo-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/ceelo-mobile@1x.webp 1x, img/ceelo-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/ceelo-desktop@1x.jpg 1x, img/ceelo-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/ceelo-tablet@1x.jpg 1x, img/ceelo-tablet@2x.jpg 2x">
+              <img class="artists-item__img  artists-item__img--photo" src="ceelo-mobile@1x.jpg 1x" srcset="ceelo-mobile@2x.jpg 2x" alt="Thomas DeCarlo Callaway photo">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/ceelo-logo-desktop@1x.webp 1x, img/ceelo-logo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/ceelo-logo-tablet@1x.webp 1x, img/ceelo-logo-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/ceelo-logo-mobile@1x.webp 1x, img/ceelo-logo-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/ceelo-logo-desktop@1x.png 1x, img/ceelo-logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/ceelo-logo-tablet@1x.png 1x, img/ceelo-logo-tablet@2x.png 2x">
+              <img class="artists-item__img  artists-item__img--name" src="ceelo-logo-mobile@1x.png 1x" srcset="ceelo-logo-mobile@2x.png 2x" alt="Cee Lo Green">
+            </picture>
             <p class="artists-item__descr">Томас Декарло Кэллавей<br>(Thomas DeCarlo Callaway, род. 30 мая 1974) — американский певец, рэпер, автор песен и продюсер, более известный под своим сценическим псевдонимом Си Ло Грин (CeeLo Green). Многократный обладатель премии Grammy, исполнитель хита группы Gnarls Barkley «Crazy», автор песни «F*ck You» и судья популярного американского шоу The Voice.
             </p>
           </li>
-          <li class="artists-item">
-            <img class="artists-item__img  artists-item__img--photo" src="" alt="Cory Henry photo">
+          <li class="artists-item  artists-item--henry">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/henry-desktop@1x.webp 1x, img/henry-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/henry-tablet@1x.webp 1x, img/henry-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/henry-mobile@1x.webp 1x, img/henry-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/henry-desktop@1x.png 1x, img/henry-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/henry-tablet@1x.png 1x, img/henry-tablet@2x.png 2x">
+              <img class="artists-item__img  artists-item__img--photo" src="henry-mobile@1x.png 1x" srcset="henry-mobile@2x.png 2x" alt="Cory Henry photo">
+            </picture>
             <h2 class="artists-item__name">Cory Henry &#38; Funk Apostles</h2>
             <p class="artists-item__descr">Мультиинструменталист, мастер импровизации, участник команды Snarky Puppy, обладатель двух «Грэмми» — солидный набор для человека его возраста. Но свое место в джазовом пантеоне Генри занял вполне заслуженно — его техника игры на органе впечатляет (кстати, играть на нем он начал, когда ему было всего два года!). Кори Генри выступал вместе с легендарными Кенни Гарреттом, Брюсом Спрингстином, Робертом Глеспером и The Roots.</p>
           </li>
-          <li class="artists-item">
-            <img class="artists-item__img  artists-item__img--photo" src="" alt="Kamaal Williams photo">
+          <li class="artists-item  artists-item--kamaal">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/kamaal-desktop@1x.webp 1x, img/kamaal-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/kamaal-tablet@1x.webp 1x, img/kamaal-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/kamaal-mobile@1x.webp 1x, img/kamaal-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/kamaal-desktop@1x.png 1x, img/kamaal-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/kamaal-tablet@1x.png 1x, img/kamaal-tablet@2x.png 2x">
+              <img class="artists-item__img  artists-item__img--photo" src="kamaal-mobile@1x.png 1x" srcset="kamaal-mobile@2x.png 2x" alt="Kamaal Williams photo">
+            </picture>
             <h2 class="artists-item__name">Kamaal Williams</h2>
             <p class="artists-item__descr">Особое место в лайнапе Chess &#38; Jazz займет звезда лондонского андеграунда Kamaal Williams, также известный под псевдонимом Henry Wu. Он представит в России свой новый альбом The Return, выпущенный в 2018 году. Широкую известность музыкант получил как продюсер и один из авторов знакового альбома Black Focus, выпущенного проектом Yussef Kamaal. Каждое выступление Kamaal Williams – это яркое импровизационное шоу, где ритмы джаз-фанка 70-х миксуются с битом, бассом и хип-хопом.</p>
           </li>
-          <li class="artists-item">
-            <img class="artists-item__img  artists-item__img--photo" src="" alt="Secret Atelier photo">
+          <li class="artists-item  artists-item--secret">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/secret-desktop@1x.webp 1x, img/secret-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/secret-tablet@1x.webp 1x, img/secret-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/secret-mobile@1x.webp 1x, img/secret-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/secret-desktop@1x.png 1x, img/secret-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/secret-tablet@1x.png 1x, img/secret-tablet@2x.png 2x">
+              <img class="artists-item__img  artists-item__img--photo" src="secret-mobile@1x.png 1x" srcset="secret-mobile@2x.png 2x" alt="Secret Atelier photo">
+            </picture>
             <h2 class="artists-item__name">Secret Atelier</h2>
             <p class="artists-item__descr">Если описывать Secret Atelier одним словом, то это будет «soul». Но музыка проекта лишний раз показывает, насколько широко это можно трактовать. Secret Atelier - это проект московской певицы Светы Жаворонковой и продюсера из Самары Ильи Попова. С 2017 года группа продвигает современное прочтение соула, замешанное на фанке, диско и хаусе. Стихия Secret Atelier — эклектичная и вневременная поп-музыка, которая стремится на танцпол. Их песни можно услышать в ротации Megapolis FM, а сингл "Prove Me Wrong", выпущенный на нью-йоркском лейбле King Street Sounds, уже этим летом будет играть на горячих танцполах  Ибицы. Сейчас ребята работают над дебютным альбомом, песни с которого можно будет услышать у нас на фестивале</p>
           </li>
-          <li class="artists-item">
-            <img class="artists-item__img  artists-item__img--photo" src="" alt="Moscow Ragtime Band photo">
+          <li class="artists-item  artists-item--mrb">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/mrb-desktop@1x.webp 1x, img/mrb-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/mrb-tablet@1x.webp 1x, img/mrb-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mrb-mobile@1x.webp 1x, img/mrb-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/mrb-desktop@1x.png 1x, img/mrb-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/mrb-tablet@1x.png 1x, img/mrb-tablet@2x.png 2x">
+              <img class="artists-item__img  artists-item__img--photo" src="mrb-mobile@1x.png 1x" srcset="mrb-mobile@2x.png 2x" alt="Moscow Ragtime Band photo">
+            </picture>
             <h2 class="artists-item__name">Moscow Ragtime Band</h2>
             <p class="artists-item__descr">Moscow Ragtime Band – столичный ансамбль, исполняющий традиционный джаз первой половины ХХ века так же горячо и артистично, как это делали великие пионеры жанра в старые добрые времена! Участники Moscow Ragtime Band используют традиционные акустические музыкальные инструменты, и исполняют, возможно, самый энергетически заряженный и интерактивный джаз в мире – новоорлеанский. Яркое представление Moscow Ragtime Band захватывает публику, которая вместе с ансамблем становится участником праздника по-настоящему живой музыки.</p>
           </li>
@@ -62,11 +115,27 @@
       <section class="sponsors">
         <ul class="sponsors-list">
           <li class="sponsors-item">
-            <img class="sponsors-item__img" src="" alt="decor">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/pattern-blue-desktop@1x.webp 1x, img/pattern-blue-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/pattern-blue-tablet@1x.webp 1x, img/pattern-blue-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/pattern-blue-mobile@1x.webp 1x, img/pattern-blue-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/pattern-blue-desktop@1x.jpg 1x, img/pattern-blue-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/pattern-blue-tablet@1x.jpg 1x, img/pattern-blue-tablet@2x.jpg 2x">
+              <img class="sponsors-item__img" src="pattern-blue-mobile@1x.jpg 1x" srcset="pattern-blue-mobile@2x.jpg 2x" alt="decor">
+            </picture>
           </li>
           <li class="sponsors-item">
             <a class="sponsors-item__link" href="" aria-label="Porsche">
-              <img class="sponsors-item__img" src="" alt="Porsche">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/porsche-desktop@1x.webp 1x, img/porsche-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/porsche-tablet@1x.webp 1x, img/porsche-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/porsche-mobile@1x.webp 1x, img/porsche-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1300px)" srcset="img/porsche-desktop@1x.png 1x, img/porsche-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/porsche-tablet@1x.png 1x, img/porsche-tablet@2x.png 2x">
+                <img class="sponsors-item__img" src="porsche-mobile@1x.png 1x" srcset="porsche-mobile@2x.png 2x" alt="Porsche">
+              </picture>
             </a>
           </li>
           <li class="sponsors-item">
@@ -86,12 +155,28 @@
           </li>
           <li class="sponsors-item">
             <a class="sponsors-item__link" href="" aria-label="Департамент культуры города Москвы">
-              <img class="sponsors-item__img" src="" alt="Департамент культуры города Москвы">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/depcultmos-desktop@1x.webp 1x, img/depcultmos-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/depcultmos-tablet@1x.webp 1x, img/depcultmos-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/depcultmos-mobile@1x.webp 1x, img/depcultmos-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1300px)" srcset="img/depcultmos-desktop@1x.png 1x, img/depcultmos-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/depcultmos-tablet@1x.png 1x, img/depcultmos-tablet@2x.png 2x">
+                <img class="sponsors-item__img" src="depcultmos-mobile@1x.png 1x" srcset="depcultmos-mobile@2x.png 2x" alt="Департамент культуры города Москвы">
+              </picture>
             </a>
           </li>
           <li class="sponsors-item">
             <a class="sponsors-item__link" href="" aria-label="Серебряный дождь">
-              <img class="sponsors-item__img" src="" alt="Серебряный дождь">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/rain-desktop@1x.webp 1x, img/rain-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/rain-tablet@1x.webp 1x, img/rain-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/rain-mobile@1x.webp 1x, img/rain-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1300px)" srcset="img/rain-desktop@1x.png 1x, img/rain-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/rain-tablet@1x.png 1x, img/rain-tablet@2x.png 2x">
+                <img class="sponsors-item__img" src="rain-mobile@1x.png 1x" srcset="rain-mobile@2x.png 2x" alt="Серебряный дождь">
+              </picture>
             </a>
           </li>
           <li class="sponsors-item"></li>
@@ -132,6 +217,7 @@
             <a class="page-footer__links-item-link" href="mailto:partners@chessandjazz.com">partners@chessandjazz.com</a>
           </li>
         </ul>
+        <p class="page-footer__limitation">18+</p>
       </div>
     </footer>
   </body>
