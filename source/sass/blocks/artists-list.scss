@@ -1,0 +1,5 @@
+.artists-list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 320px;
+}

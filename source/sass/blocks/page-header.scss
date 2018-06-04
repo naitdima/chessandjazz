@@ -1,0 +1,35 @@
+.page-header {
+  margin-bottom: 75px;
+}
+
+.page-header__wrap {
+  display: grid;
+
+  grid-template-columns: 20px 100px 76px 1fr;
+  grid-template-rows: 100px 76px;
+}
+
+.page-header__logo {
+  position: relative;
+
+  grid-column: 3 / 2;
+  grid-row: 2 / 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 65px;
+
+    width: 55px;
+    height: 55px;
+
+    background-image: url("../img/arrow-turquoise.svg");
+    background-size: cover;
+  }
+}
+
+.page-header__buy-link {
+  grid-column: 4 / 3;
+  grid-row: 3 / 2;
+}

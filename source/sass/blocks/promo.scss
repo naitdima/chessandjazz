@@ -1,0 +1,50 @@
+.promo {
+  margin-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 70px;
+}
+
+.promo__date {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #345eff;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: #202020;
+  text-transform: uppercase;
+}
+
+.promo__descr {
+  position: relative;
+
+  margin: 0;
+  z-index: 1;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #202020;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -81px;
+    left: 11px;
+    z-index: -1;
+
+    width: 161px;
+    height: 162px;
+
+    background-image: url("../img/arrow-pink.svg");
+    background-size: cover;
+  }
+}
