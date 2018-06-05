@@ -1,0 +1,11 @@
+.social-list {
+  @include list-reset;
+
+  display: grid;
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}

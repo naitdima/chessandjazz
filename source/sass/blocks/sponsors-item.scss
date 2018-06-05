@@ -1,0 +1,34 @@
+.sponsors-item {
+  position: relative;
+
+  width: 160px;
+  height: 160px;
+}
+
+.sponsors-item__link {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 160px;
+  height: 160px;
+
+  cursor: pointer;
+
+  &--jbl,
+  &--sportex,
+  &--black,
+  &--marriott {
+    background-color: #000000;
+  }
+
+  &--rain {
+    .sponsors-item__img {
+      position: absolute;
+      top: 50%;
+      right: -19px;
+      z-index: 1;
+
+      transform: translateY(-50%);
+    }
+  }
+}
