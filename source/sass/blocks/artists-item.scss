@@ -27,20 +27,14 @@
       }
     }
 
-    &::before {
-      content: "";
-      position: absolute;
+    .artists-item__play-link {
       top: 190px;
       left: 23px;
 
-      width: 33px;
-      height: 36px;
-
       background-image: url("../img/icon-play-yellow.svg");
-      background-size: cover;
     }
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       right: 30px;
@@ -74,6 +68,13 @@
       grid-template-columns: 200px 226px;
     }
 
+    .artists-item__play-link {
+      top: 217px;
+      left: 132px;
+
+      background-image: url("../img/icon-play-turquoise.svg");
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -85,19 +86,6 @@
       height: 150px;
 
       background-image: url("../img/arrow-blue.svg");
-      background-size: cover;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 217px;
-      left: 132px;
-
-      width: 33px;
-      height: 36px;
-
-      background-image: url("../img/icon-play-turquoise.svg");
       background-size: cover;
     }
 
@@ -126,6 +114,13 @@
 
       grid-gap: 30px;
       grid-template-columns: 226px 187px;
+    }
+
+    .artists-item__play-link {
+      top: 217px;
+      left: 132px;
+
+      background-image: url("../img/icon-play-yellow.svg");
     }
 
     .artists-item__descr {
@@ -169,6 +164,13 @@
     padding-right: 30px;
     padding-left: 30px;
 
+    .artists-item__play-link {
+      top: 220px;
+      left: 58px;
+
+      background-image: url("../img/icon-play-turquoise.svg");
+    }
+
     .artists-item__wrap {
       display: grid;
       width: 691px;
@@ -199,6 +201,13 @@
   &--mrb {
     padding-right: 20px;
     padding-left: 20px;
+
+    .artists-item__play-link {
+      top: 114px;
+      right: 76px;
+
+      background-image: url("../img/icon-play-yellow.svg");
+    }
 
     .artists-item__wrap {
       display: grid;
@@ -245,4 +254,13 @@
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.artists-item__play-link {
+  position: absolute;
+
+  width: 33px;
+  height: 36px;
+
+  background-size: cover;
 }

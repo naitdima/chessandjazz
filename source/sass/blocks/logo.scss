@@ -9,3 +9,15 @@
 
   background-color: #000000;
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo__img {
+    width: 132px;
+    height: 84px;
+  }
+}

@@ -20,3 +20,13 @@
     transform: translateX(-50%);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .buy-link {
+    width: 135px;
+    height: 135px;
+
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

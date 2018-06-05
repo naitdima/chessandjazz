@@ -1,5 +1,4 @@
 .promo {
-  margin-bottom: 30px;
   padding-right: 15px;
   padding-left: 70px;
 }
@@ -26,9 +25,10 @@
 
 .promo__descr {
   position: relative;
-
-  margin: 0;
   z-index: 1;
+
+  width: 226px;
+  margin: 0;
 
   font-size: 13px;
   line-height: 18px;

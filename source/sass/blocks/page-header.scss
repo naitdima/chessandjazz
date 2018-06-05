@@ -1,5 +1,5 @@
 .page-header {
-  margin-bottom: 75px;
+  margin-bottom: 30px;
 }
 
 .page-header__container {
@@ -10,10 +10,10 @@
     position: absolute;
     top: -70px;
     left: -225px;
+    z-index: -1;
 
     width: 400px;
     height: 489px;
-    z-index: -1;
 
     background-image: url("../img/palm-1-mobile@1x.png");
     background-size: cover;
@@ -25,7 +25,6 @@
     animation-fill-mode: backwards;
 
     @media (min-resolution: 1.5dppx) {
-
       background-image: url("../img/palm-1-mobile@2x.png");
     }
   }
@@ -33,6 +32,7 @@
 
 .page-header__wrap {
   display: grid;
+  margin-bottom: 75px;
 
   grid-template-columns: 20px 100px 76px 1fr;
   grid-template-rows: 100px 76px;
@@ -53,7 +53,7 @@
     width: 55px;
     height: 55px;
 
-    background-image: url("../img/arrow-turquoise.svg");
+    background-image: url("../img/arrow-turquoise-tablet.svg");
     background-size: cover;
   }
 }
@@ -61,4 +61,62 @@
 .page-header__buy-link {
   grid-column: 4 / 3;
   grid-row: 3 / 2;
+}
+
+.page-header__menu-btn {
+  position: absolute;
+  top: 132px;
+  right: 40px;
+
+  display: none;
+  width: 41px;
+  height: 25px;
+
+  background-image: url("../img/icon-hamburger.svg");
+  background-size: cover;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 45px;
+  }
+
+  .page-header__container {
+    &::before {
+      top: -139px;
+      left: -708px;
+
+      width: 1021px;
+      height: 1248px;
+
+      background-image: url("../img/palm-1-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/palm-1-tablet@2x.png");
+      }
+    }
+  }
+
+  .page-header__wrap {
+    width: 500px;
+    margin: 0;
+    margin-left: 50px;
+
+    grid-template-columns: 127px 200px 135px 1fr;
+    grid-template-rows: 200px 135px;
+  }
+
+  .page-header__logo {
+    &::before {
+      top: 161px;
+      left: 132px;
+
+      width: 122px;
+      height: 121px;
+    }
+  }
+
+  .page-header__menu-btn {
+    display: block;
+  }
 }
