@@ -1,0 +1,87 @@
+.decor-item {
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--cell {
+    width: 20px;
+    height: 50px;
+
+    background-image: url("../img/decor-cell.svg");
+
+    grid-column: 2 / 1;
+  }
+
+  &--armitage {
+    position: relative;
+
+    background-image: url("../img/decor-armitage@1x.png");
+
+    grid-column: 4 / 5;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/decor-armitage@2x.png");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 25px;
+
+      width: 58px;
+      height: 57px;
+      z-index: 1;
+
+      background-image: url("../img/arrow-orange.svg");
+      background-size: cover;
+    }
+  }
+
+  &--abstraction {
+    background-image: url("../img/decor-abstraction@1x.jpg");
+
+    grid-column: 5 / 6;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/decor-abstraction@2x.jpg");
+    }
+  }
+
+  &--mcb {
+    background-color: #000000;
+    background-image: url("../img/decor-mcb.svg");
+    background-position: center center;
+    background-size: 34px 28px;
+
+    grid-column: 6 / 7;
+  }
+
+  &--lines {
+    position: relative;
+
+    background-color: #ffffff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+
+      width: 8px;
+      height: 33px;
+
+      background-color: #000000;
+    }
+
+    &::before {
+      left: 12.5px;
+    }
+
+    &::after {
+      right: 12.5px;
+    }
+  }
+}

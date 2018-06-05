@@ -10,6 +10,8 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
   font-family: $main-font;
   color: #000000;
 

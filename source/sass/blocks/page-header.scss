@@ -2,6 +2,35 @@
   margin-bottom: 75px;
 }
 
+.page-header__container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -225px;
+
+    width: 400px;
+    height: 489px;
+    z-index: -1;
+
+    background-image: url("../img/palm-1-mobile@1x.png");
+    background-size: cover;
+
+    animation-name: palm;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    animation-fill-mode: backwards;
+
+    @media (min-resolution: 1.5dppx) {
+
+      background-image: url("../img/palm-1-mobile@2x.png");
+    }
+  }
+}
+
 .page-header__wrap {
   display: grid;
 

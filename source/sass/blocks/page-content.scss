@@ -1,0 +1,51 @@
+.page-content--container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 450px;
+    right: -191px;
+    z-index: 1;
+
+    width: 309px;
+    height: 354px;
+
+    background-image: url("../img/palm-2-mobile@1x.png");
+    background-size: cover;
+
+    animation-name: palm-rev;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    animation-fill-mode: backwards;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/palm-2-mobile@2x.png");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -253px;
+    left: -325px;
+    z-index: -1;
+
+    width: 886px;
+    height: 1469px;
+
+    background-image: url("../img/palm-3-mobile@1x.png");
+    background-size: cover;
+
+    animation-name: palm;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    animation-fill-mode: backwards;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/palm-3-mobile@2x.png");
+    }
+  }
+}

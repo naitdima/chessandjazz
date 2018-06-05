@@ -1,0 +1,12 @@
+@keyframes palm {
+  0% {transform: none;}
+  50% {transform: rotate(5deg);}
+  100% {transform: none;}
+}
+
+@keyframes palm-rev {
+  0% {transform: none;}
+  50% {transform: rotate(-5deg);}
+  100% {transform: none;}
+}
+
