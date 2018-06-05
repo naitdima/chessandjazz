@@ -1,9 +1,18 @@
 .artists-item {
   position: relative;
 
+  width: 320px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
   &--ceelo {
-    width: 400px;
+    height: 530px;
     margin-bottom: 60px;
+
+    .artists-item__wrap {
+      width: 400px;
+      height: 530px;
+    }
 
     .artists-item__img {
       &--photo {
@@ -30,6 +39,19 @@
       background-size: cover;
     }
 
+    &::after {
+      content: "";
+      position: absolute;
+      right: 30px;
+      bottom: -80px;
+
+      width: 206px;
+      height: 206px;
+
+      background-image: url("../img/arrow-turquoise-rounded.svg");
+      background-size: cover;
+    }
+
     .artists-item__descr {
       width: 200px;
       margin-left: 20px;
@@ -37,14 +59,19 @@
   }
 
   &--henry {
-    display: grid;
-    width: 494px;
+    height: 356px;
     margin-bottom: 90px;
     padding-right: 20px;
     padding-left: 20px;
 
-    grid-gap: 28px;
-    grid-template-columns: 200px 226px;
+    .artists-item__wrap {
+      display: grid;
+      width: 454px;
+      height: 356px;
+
+      grid-gap: 28px;
+      grid-template-columns: 200px 226px;
+    }
 
     &::before {
       content: "";
@@ -57,6 +84,19 @@
       height: 150px;
 
       background-image: url("../img/arrow-blue.svg");
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 217px;
+      left: 132px;
+
+      width: 33px;
+      height: 36px;
+
+      background-image: url("../img/icon-play-turquoise.svg");
       background-size: cover;
     }
 
@@ -74,20 +114,39 @@
   }
 
   &--kamaal {
-    display: grid;
-    width: 482px;
     margin-bottom: 75px;
     padding-right: 20px;
     padding-left: 20px;
 
-    grid-gap: 30px;
-    grid-template-columns: 226px 187px;
+    .artists-item__wrap {
+      display: grid;
+      width: 442px;
+      height: 388px;
+
+      grid-gap: 30px;
+      grid-template-columns: 226px 187px;
+    }
 
     .artists-item__descr {
+      position: relative;
+
       width: 226px;
 
       grid-column: 2 / 1;
       grid-row: 2 / 1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -58px;
+        right: -10px;
+
+        width: 47px;
+        height: 47px;
+
+        background-image: url("../img/decor-cell-five.svg");
+        background-size: cover;
+      }
     }
 
     .artists-item__img {
@@ -105,14 +164,18 @@
   }
 
   &--secret {
-    display: grid;
-    width: 760px;
     margin-bottom: 65px;
     padding-right: 30px;
     padding-left: 30px;
 
-    grid-gap: 20px;
-    grid-template-columns: 208px 472px;
+    .artists-item__wrap {
+      display: grid;
+      width: 691px;
+      height: 340px;
+
+      grid-gap: 20px;
+      grid-template-columns: 208px 472px;
+    }
 
     .artists-item__name {
       position: absolute;
@@ -122,8 +185,10 @@
 
     .artists-item__descr {
       width: 472px;
+      height: 340px;
 
       columns: 226px 2;
+      column-fill: auto;
 
       grid-column: 3 / 2;
       grid-row: 2 / 1;
@@ -131,13 +196,17 @@
   }
 
   &--mrb {
-    display: grid;
-    width: 796px;
     padding-right: 20px;
     padding-left: 20px;
 
-    grid-gap: 25px;
-    grid-template-columns: 260px 470px;
+    .artists-item__wrap {
+      display: grid;
+      width: 756px;
+      height: 295px;
+
+      grid-gap: 25px;
+      grid-template-columns: 260px 470px;
+    }
 
     .artists-item__name {
       position: absolute;
@@ -151,6 +220,7 @@
       width: 472px;
 
       columns: 223px 2;
+      column-fill: auto;
 
       grid-column: 3 / 2;
       grid-row: 2 / 1;

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 76px;
+  height: 76px;
 
   font-size: 12px;
   line-height: 17px;
@@ -10,4 +12,10 @@
   text-transform: uppercase;
 
   background-color: #0060ff;
+
+  &--bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
