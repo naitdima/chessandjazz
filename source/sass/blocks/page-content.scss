@@ -1,11 +1,11 @@
-.page-content--container {
+.page-content {
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 450px;
-    right: -191px;
+    top: 96px;
+    right: -187px;
     z-index: 1;
 
     width: 309px;
@@ -28,8 +28,8 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -253px;
-    left: -325px;
+    bottom: -256px;
+    left: -326px;
     z-index: -1;
 
     width: 886px;

@@ -1,5 +1,5 @@
 .page-header {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .page-header__container {
@@ -8,8 +8,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: -70px;
-    left: -225px;
+    top: -71px;
+    left: -239px;
     z-index: -1;
 
     width: 400px;
@@ -19,6 +19,7 @@
     background-size: cover;
 
     animation-name: palm;
+    transform: rotate(11deg);
     animation-duration: 6s;
     animation-iteration-count: infinite;
 

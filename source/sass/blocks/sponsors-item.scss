@@ -25,11 +25,9 @@
   &--rain {
     .sponsors-item__img {
       position: absolute;
-      top: 50%;
-      right: -19px;
+      top: 35px;
+      right: -17px;
       z-index: 1;
-
-      transform: translateY(-50%);
     }
   }
 }
