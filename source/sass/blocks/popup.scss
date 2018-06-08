@@ -1,0 +1,60 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  display: none;
+  padding: 10px;
+
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+
+  &--show {
+    display: block;
+  }
+}
+
+.popup__iframe {
+  width: 280px;
+  height: 157px;
+
+  border: none;
+}
+
+.popup__close {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+
+  width: 25px;
+  height: 25px;
+
+  background-color: transparent;
+  background-image: url("../img/popup-close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+
+  &:hover {
+    background-image: url("../img/popup-close-hover.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup {
+    padding: 70px;
+  }
+
+  .popup__iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  .popup__close {
+    width: 35px;
+    height: 35px;
+  }
+}
