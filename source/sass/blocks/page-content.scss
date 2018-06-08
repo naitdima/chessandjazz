@@ -49,3 +49,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-content__wrap {
+    display: grid;
+    width: 733px;
+    margin: 0 auto;
+
+    grid-gap: 179px;
+    grid-template-columns: 320px 234px;
+  }
+}

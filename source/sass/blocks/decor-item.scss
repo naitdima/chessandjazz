@@ -1,190 +1,133 @@
 .decor-item {
-  width: 50px;
-  height: 50px;
+  position: relative;
 
-  background-repeat: no-repeat;
   background-size: cover;
 
-  &--cell-45deg,
-  &--hor-lines,
-  &--cell-45deg-4,
-  &--social,
-  &--palm,
-  &--pattern {
-    display: none;
-  }
-
-  &--cell-45deg {
-    background-image: url("../img/decor-cell-45deg.svg");
-  }
-
-  &--hor-lines {
-    background-image: url("../img/decor-hor-lines.svg");
-  }
-
-  &--cell-45deg-4 {
-    background-image: url("../img/decor-cell-45deg-4.svg");
-  }
-
-  &--palm {
-    width: 200px;
-
-    background-image: url("../img/decor-palm@1x.jpg");
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/decor-palm@2x.jpg");
-    }
-  }
-
-  &--pattern {
-    width: 200px;
-
-    background-image: url("../img/decor-pattern@1x.jpg");
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/decor-pattern@2x.jpg");
-    }
-  }
-
-  &--cell {
-    order: 1;
+  &--left {
     width: 20px;
-    height: 50px;
 
-    background-image: url("../img/decor-cell-min.svg");
+    background-image: url("../img/decor-left-mobile@1x.jpg");
 
-    grid-column: 2 / 1;
-  }
-
-  &--armitage {
-    position: relative;
-
-    order: 2;
-
-    background-color: #000000;
-    background-image: url("../img/decor-armitage@1x.png");
-    background-position: center center;
-    background-size: 37px 37px;
-
-    grid-column: 4 / 5;
+    grid-column: 1 / 2;
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/decor-armitage@2x.png");
+      background-image: url("../img/decor-left-mobile@2x.jpg");
     }
 
     &::before {
       content: "";
       position: absolute;
-      top: 25px;
-      right: 25px;
-      z-index: 1;
+      top: 0;
+      right: 100%;
 
-      width: 58px;
-      height: 57px;
+      width: 179px;
+      height: 50px;
 
-      background-image: url("../img/arrow-orange.svg");
+      background-image: url("../img/decor-left-psevdo-mobile@1x.jpg");
       background-size: cover;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/decor-left-psevdo-mobile@2x.jpg");
+      }
     }
   }
 
-  &--abstraction {
-    order: 3;
+  &--right {
+    width: 200px;
 
-    background-image: url("../img/decor-abstraction@1x.jpg");
+    background-image: url("../img/decor-right-mobile@1x.jpg");
 
-    grid-column: 5 / 6;
+    grid-column: 3 / 4;
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/decor-abstraction@2x.jpg");
-    }
-  }
-
-  &--mcb {
-    order: 4;
-
-    background-color: #000000;
-    background-image: url("../img/decor-mcb.svg");
-    background-position: center center;
-    background-size: 34px 28px;
-
-    grid-column: 6 / 7;
-  }
-
-  &--vert-lines {
-    position: relative;
-
-    order: 5;
-
-    background-color: #ffffff;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-
-      width: 8px;
-      height: 33px;
-
-      background-color: #000000;
+      background-image: url("../img/decor-right-mobile@2x.jpg");
     }
 
     &::before {
-      left: 12.5px;
-    }
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
 
-    &::after {
-      right: 12.5px;
+      width: 250px;
+      height: 50px;
+
+      background-image: url("../img/decor-right-psevdo-mobile@1x.jpg");
+      background-size: cover;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/decor-right-psevdo-mobile@2x.jpg");
+      }
     }
+  }
+
+  &--social {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .decor-item {
-    display: block;
-    width: 100px;
     height: 100px;
 
-    &--pattern {
-      grid-column: 3 / 1;
-    }
+    &--left {
+      width: 127px;
 
-    &--cell-45deg {
-      grid-column: 4 / 3;
-    }
+      background-image: url("../img/decor-left-desk@1x.jpg");
 
-    &--hor-lines {
-      grid-column: 5 / 4;
-    }
-
-    &--hor-lines {
-      grid-column: 5 / 4;
-    }
-
-    &--armitage {
-      order: 2;
-
-      background-image: url("../img/decor-armitage-tablet@1x.png");
-      background-size: 74px 74px;
-
-      grid-column: 9 / 8;
+      grid-column: 1 / 2;
 
       @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/decor-armitage-tablet@2x.png");
+        background-image: url("../img/decor-left-desk@2x.jpg");
+      }
+
+      &::before {
+        width: 964px;
+        height: 100px;
+
+        background-image: url("../img/decor-left-psevdo-desk@1x.jpg");
+
+        @media (min-resolution: 1.5dppx) {
+          background-image: url("../img/decor-left-psevdo-desk@2x.jpg");
+        }
       }
     }
 
-    &--abstraction {
-      order: 3;
-      width: 200px;
+    &--right {
+      width: 830px;
 
-      background-image: url("../img/decor-abstraction-tablet@1x.jpg");
+      background-image: url("../img/decor-right-desk@1x.jpg");
 
-      grid-column: 15 / 13;
+      grid-column: 3 / 4;
 
       @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/decor-abstraction-tablet@2x.jpg");
+        background-image: url("../img/decor-right-desk@2x.jpg");
       }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+
+        width: 961px;
+        height: 100px;
+
+        background-image: url("../img/decor-right-psevdo-desk@1x.jpg");
+        background-size: cover;
+
+        @media (min-resolution: 1.5dppx) {
+          background-image: url("../img/decor-right-psevdo-desk@2x.jpg");
+        }
+      }
+    }
+
+    &--social {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      grid-column: 2 / 3;
     }
   }
 }

@@ -1,6 +1,19 @@
 .artists-list {
   @include list-reset;
+
   overflow: hidden;
 
   text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .artists-list {
+    display: grid;
+    width: 1090px;
+
+    text-align: left;
+
+    grid-template-columns: 322px 50px 335px 38px 334px;
+    grid-template-rows: repeat(3, auto);
+  }
 }

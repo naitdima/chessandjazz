@@ -8,4 +8,8 @@
 
   grid-gap: 14px;
   grid-template-columns: repeat(3, 40px);
+
+  &--decor {
+    margin: 0;
+  }
 }

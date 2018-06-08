@@ -1,6 +1,10 @@
 .promo {
+  padding-top: 75px;
   padding-right: 15px;
-  padding-left: 70px;
+  padding-left: 50px;
+
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
 }
 
 .promo__date {
@@ -13,7 +17,6 @@
 }
 
 .promo__title {
-  letter-spacing: 0.17em;
   margin: 0;
   margin-bottom: 11px;
 
@@ -22,6 +25,7 @@
   line-height: 23px;
   color: #202020;
   text-transform: uppercase;
+  letter-spacing: 0.17em;
 }
 
 .promo__descr {
@@ -47,5 +51,55 @@
 
     background-image: url("../img/arrow-pink.svg");
     background-size: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 521px;
+    padding: 0;
+    padding-top: 83px;
+    padding-left: 187px;
+
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+  }
+
+  .promo__date {
+    width: 521px;
+    margin-bottom: 11px;
+
+    font-size: 24px;
+    line-height: 29px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .promo__title {
+    width: 415px;
+    margin-bottom: 21px;
+
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.13em;
+  }
+
+  .promo__descr {
+    width: 521px;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    &::before {
+      bottom: -81px;
+      left: 11px;
+
+      width: 161px;
+      height: 162px;
+
+      background-image: url("../img/arrow-pink.svg");
+    }
   }
 }
