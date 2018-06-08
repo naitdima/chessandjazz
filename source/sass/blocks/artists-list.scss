@@ -1,6 +1,7 @@
 .artists-list {
   @include list-reset;
 
+  margin-bottom: 50px;
   overflow: hidden;
 
   text-align: center;

@@ -57,3 +57,31 @@
   text-align: center;
   color: #c0c0c0;
 }
+
+@media (min-width: $desktop-width) {
+  .links {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .links__title {
+    text-align: left;
+  }
+
+  .links__list {
+    justify-content: start;
+    margin-bottom: 48px;
+  }
+
+  .links__item-title {
+    text-align: left;
+  }
+
+  .links__item-link {
+    text-align: left;
+  }
+
+  .links__limitation {
+    text-align: left;
+  }
+}

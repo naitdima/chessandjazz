@@ -28,7 +28,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -256px;
+    bottom: 245px;
     left: -326px;
     z-index: -1;
 
@@ -51,6 +51,36 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-content {
+    &::before {
+      top: 13px;
+      right: 65px;
+
+      width: 699px;
+      height: 800px;
+
+      background-image: url("../img/palm-2-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/palm-2-tablet@2x.png");
+      }
+    }
+
+    &::after {
+      bottom: -307px;
+      left: -219px;
+
+      width: 1112px;
+      height: 1846px;
+
+      background-image: url("../img/palm-4-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/palm-4-tablet@2x.png");
+      }
+    }
+  }
+
   .page-content__wrap {
     display: grid;
     width: 733px;

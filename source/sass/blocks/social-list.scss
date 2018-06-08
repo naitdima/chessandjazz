@@ -8,8 +8,16 @@
 
   grid-gap: 14px;
   grid-template-columns: repeat(3, 40px);
+}
 
-  &--decor {
-    margin: 0;
+@media (min-width: $desktop-width) {
+  .social-list {
+    width: auto;
+    margin-bottom: 48px;
+    margin-left: -17px;
+
+    &--decor {
+      margin: 0;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .artists {
   position: relative;
 
-  margin-bottom: 583px;
+  margin-bottom: 507px;
 }
 
 @media (min-width: $desktop-width) {
@@ -9,5 +9,6 @@
     display: grid;
     justify-content: center;
     width: 100%;
+    margin-bottom: 210px;
   }
 }

@@ -1,4 +1,7 @@
 .buy-link {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,13 +17,8 @@
   background-color: #0060ff;
 
   &--bottom {
-    display: none;
-    position: absolute;
-    left: 50%;
-
+    margin: 0 auto;
     margin-top: -2px;
-
-    transform: translateX(-50%);
   }
 }
 
@@ -31,5 +29,9 @@
 
     font-size: 18px;
     line-height: 25px;
+
+    &--bottom {
+      display: none;
+    }
   }
 }

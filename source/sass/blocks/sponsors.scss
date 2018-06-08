@@ -3,3 +3,9 @@
   justify-content: center;
   margin-bottom: 184px;
 }
+
+@media (min-width: $desktop-width) {
+  .sponsors {
+    margin: 0;
+  }
+}
